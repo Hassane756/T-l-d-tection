@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Télédétection</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+
+
+
+  <body>
+    <h1>ETUDE D'IMAGE SATELLITE  DE SENTINELLE 2</h1>
+<img src="Images/Vraie couleur.png" alt="" width= "700">
+
+<hr style="height: 25px;">
+  <h3>  1-Présentation des données:</h3>
+    <p>Dans le cadre de son programme <em> <a href="https://www.copernicus.eu/fr"> Copernicus</a> <a href="https://www.esa.int/">l’Agence Spatiale Européenne</a> </em> a lancé deux satellites nommées Sentinel-2A et 2B situées sur une même orbite héliosynchrone. Elles ont une résolution temporelle de 5 jours, c’est-à-dire le temps que les satellites mettent pour passer sur une même  zone dans les conditions normales sur les 13 bandes spectrales.</p>
+
+    <p>L’image satellite que nous avons  est prise par la satellite Sentinel-2B.<wbr> Elle est de type GéoTIFF et a été prise le 17/07/2022 <wbr>en période estivale sur une largeur de 27500m <br>et une hauteur de 18900 m (2750 x 10 pixel; 1890 x 10 pixel)  dans la projection EPSG:32630 - WGS 84 / UTM zone 30N.<br> <wbr> Même si  la sentinel-2 contient 13 bandes, cette image à un nombre de 10 bandes. Les trois bandes spectrales restantes que sont la bande 1 (Aérosol), 9 (Vapeur d’eau)  et 10 (SWIR Cirrus) sont utilisées pour les traitements de l’image. Ce qui fait que nous avons 10 bandes pour cette image. Les trois couleurs primaires (Bleue, vert et rouge) correspondent respectivement aux bande B1, B2 et B3.</p>
+    <p>Pour une bonne étude de l’image nous allons procéder à une composition colorée en vraie couleur et en fausse couleur qui nous permettra de sortir les informations contenant sur l’image.</p>
+<video src="videofile.ogg" autoplay poster="posterimage.jpg">
+  <audio src="">
+    <link rel="stylesheet" href="/css/master.css">
+
+  </audio>
+</video>
+
+    <img src="Captures/Bnade_S2.png" alt="" width="700">
+
+<ul><a href="https://fr.wikipedia.org/wiki/Sentinel-2">Sentinelle_2</a>
+  <li>Bande 1 – Aérosol côtier</li>
+  <li>Bande 2 – Bleu </li>
+  <li>Bande 3 – Vert 	</li>
+  <li>Bande 4 – Rouge </li>
+  <li>Bande 5 – Végétation "red edge" </li>
+  <li>Bande 6 – Végétation "red edge" 	</li>
+  <li>Bande 7 – Végétation "red edge"</li>
+  <li>Bande 8 – PIR </li>
+  <li>Bande 8A – PIR "étroit" </li>
+  <li>Bande 9 – Vapeur d'eau </li>
+  <li>Bande 10 – SWIR – Cirrus </li>
+  <li>Bande 11 – SWIR </li>
+  <li>Bande 12 – SWIR </li>
+</ul>
+
+<p>Les bandes 1, 9 et 10 sont utilisées pour les corrections atmosphériques</p>
+    L’ image est prise dans le Sud-Ouest de la France dans le département de la Gironde à coté de la ville de Bordeaux.
+<img src="Images/Zone.png" alt="" width="700">
+
+    <h4> A- Composition colorée vrai couleur</h4>
+
+<img src="Images/Vraie couleur.png" alt="" width="700">
+
+  <p>  La composition colorée vraie couleur consiste à associer les bandes spectrales du bleu, vert, et rouge à leur couleur respective. Ce sont les couleurs du visible. Elle permettent d’avoir une visualisation sur la surface prise telle qu’elle est réellement sur la terre. Avec cette composition on voit que la majorité de l’espace pris est agricole. On distingue par ailleurs des surfaces d’eau, des fumées qui montrent l’existence de surfaces brûlées, de la foret, des sols nus.
+
+     Les surfaces apparaissent en vert avec des degrés d’intensité différents (en vert foncé au clair). Cela est du au fait la végétation a une réflectance plus forte dans le vert avec, dans certains espaces en vert foncé, 0,033 de réflectance. Dans le bleu et le rouge la lumière est absorbée par les cultures. Les sols nus sont un peu éparpillés sur l’image. Ils ont des réflectance plus forte dans le rouge avec des valeurs de  0,109 et 0,131.</p>
+
+  <p>  Les surfaces en foret sont aussi d’une couleur en vert foncé avec une réflectance forte dans le vert comme les cultures. Elle ont un réflectance plus forte dans le vert avec par exemple une valeur de 0,0319 alors que c’est faible dans le bleu et dans le rouge. Les forets peuvent être différenciées des cultures par leur configuration. En effet il n’y a pas de découpage dans les forets lors que c’est le cas pour les cultures avec pour la plupart des formes rectangulaires.
+
+    Pour l’eau, on voit qu’elle s’affiche en bleu foncé en bas de l’image et en cyan en haut. Elle a une valeur de réflectance forte dans le bleue et dans le vert avec des  valeurs de 0,048 et de 0,046. La partie qui s’affiche en cyan peut être interpréter en étant comme un bassin d’irrigation alors que l’eau qui s’affiche en bleu foncé est une eau naturelle. Sa couleur peut-être du au qu’il y ait des sédiments ou des plantes qui peuvent augmenter la turbidité de l’eau.
+
+    Les surfaces brûlées quant à elles, apparaissent en violet sur l’image. Elles ont à peu près les mêmes réflectances dans les bandes du visibles (0,031 – 0,035 – 0,039). La réflectance des surfaces brûlées augmentent en suivant les bandes spectrales, du visible jusqu’au moyen infra rouge.</p>
+
+  <h4>  B- Composition colorée fausse couleur avec PIR:</h4>
+
+  <img src="Images/Fausse couleur couleur.png" alt="" width="700">
+
+    <p><strong>La composition colorée fausse couleur</strong> suivante est réalisée avec le PIR (Proche Infra Rouge). C’est une composition qui consiste à associer  le PIR à la bande 3 (rouge), ce dernier à la bande 2 (vert)  et dans la bande bleue (bande 1) on met le vert.
+
+    Cette composition permet de <strong>mettre en évidence l’activité chlorophyllienne de la végétation</strong>. On peut  dire que la végétation est saine à cause de sa <strong>forte réflectance dans le PIR</strong>.  Cependant on peut différencier la réflectance des cultures et des forets car ces derniers ont des valeurs plus fortes que les cultures dans l’ensemble avec respectivement  <strong>0,4276 ou 0, 4731 et 0,1913 ou 0,1502</strong>. Avec ces valeurs fortes on peut  dire que la végétation dans l’ensemble (forets et cultures) est en bonne santé.</p>
+
+      <h4>C- Composition colorée fausse couleur 2 avec MIR:</h4>
+
+      <img src="Images/CC_Moyen Infra Rouge.png" alt="" width="700">
+
+  <p> <strong> La composition colorée fausse couleur</strong> avec le MIR (Moyen Infra Rouge) est réalisée avec l’association dela bande 10, 7 et 3 respectivement aux couleurs rouge, vert et bleu. La bande 10 est la bande du moyen infra rouge MIR. Il permet de ressortir les surfaces brûlées. Sur cette image, les surfaces brûlées sont en violet avec des réflectance de 0,209 dans certaines parties et 0, 07 dans d’autres. Nous verrons plus claire les surfaces brûlées en dernière partie qui traite l’extraction.</p>
+    .
+  <h3>  2-Signatures spectrales:</h3>
+<img src="Captures/Signature bon.png" alt="" width="700">
+  <h3>  3-NDVI indice de végétation par différence normalisée</h3>
+    <p>L’Inde de Végétation par différence normalisée est une composition obtenue à partir du mélange du PIR au rouge.
+      Il est utilisé pour calculer l’indice de végétation. Pour savoir si on a de la végétation de bonne qualité on
+       relève des valeurs positives dans le PIR allant de 0,1 à 0,7. C’est à dire pour permettre de voir si on a ou
+        non une végétation verte vivante. Plus la valeur est positive plus la végétation dense. Pa contre l’eau réfléchit en rouge
+        et absorbe les rayons du PIR. Quand aux sols nus, la réflectance est la même dans le PIR et le rouge, ce qui fait qu’ils ont des valeurs de 0.</p>
+<img src="Images/NDVI 1.png" alt="" width="700">
+<img src="Images/2_NDVI 1.png" alt="" width="700">
+
+    <h3>4- NBR (Inde des surfaces brûlées)</h3>
+  <p>  L’indice de surface brûlée est obtenu par le rapport entre le PIR (bande 7) et le MIR (bande 10). Il permet de mettre en évidence les surfaces brûlées. Ces dernières ont des réflectances plus forte dans le moyen infra rouge et sont visibles sur la carte avec des valeurs allant de 0 à -1. Qunat aux valeurs positives, elles représentent les surfaces n’ayant pas été touché par l’incendie.</p>
+<img src="Images/NBR.png" alt="" width="700">
+<img src="Images/NBR.jpeg" alt=""width="700">
+
+    Extraction des surfaces brûlées:
+<img src="Images/Surface brulée.jpeg" alt="" width="700">
+
+<br>
+<p>    L’extraction des surfaces brûlées est réalisée à partir d’un seuillage basé sur le NBR. Nous avons fait un seuillage de NBR < -0,1 ou NBR ≥ -0,1. Ce qui montre l’ensemble des surfaces1 qui étaient en incendie. Nous pouvons dire que c’est un e grande incendie qui a touché cette partie.
+</p>
+<h3> <a href="Ressources.html">Ressources</a> </h3>
+<ul>
+  <li><a href="https://www.copernicus.eu/fr"> Copernicus</a></li>
+  <li><a href="https://fr.wikipedia.org/wiki/Sentinel-2">Sentinelle_2</a></li>
+  <li><a href="https://www.esa.int/">l’Agence Spatiale Européenne</a></li>
+</ul>
+
+<a href="Contact.html"> <strong>Contact</strong></a>
+<a href="Propriétaire.html"> <strong>CV</strong> </a>
+  </body>
+</html>
